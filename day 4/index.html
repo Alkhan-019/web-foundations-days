@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter and Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Live Character Counter and Dark Mode</h1>
+
+        <button id="theme-toggle" type="button">Switch to Dark Mode</button>
+
+        <label for="text-input">Write your note:</label>
+
+        <textarea
+            id="text-input"
+            rows="10"
+            maxlength="200"
+            placeholder="Start typing your note here..."
+        ></textarea>
+
+        <div class="counter">
+            <p>Characters: <span id="char-count">0</span> / 200</p>
+            <p>Words: <span id="word-count">0</span></p>
+            <p>Remaining: <span id="remaining-count">200</span></p>
+        </div>
+
+        <p id="message">You are within the character limit.</p>
+
+        <button id="clear-btn" type="button">Clear</button>
+    </main>
+</body>
+</html>
